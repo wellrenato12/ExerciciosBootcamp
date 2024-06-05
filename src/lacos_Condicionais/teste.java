@@ -1,4 +1,4 @@
-package teste1;
+package lacos_Condicionais;
 
 public class teste {
 
