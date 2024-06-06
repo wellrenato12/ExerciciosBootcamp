@@ -9,42 +9,8 @@ public class Ex4 {
 		int x = 0;
 		int identidade, mf = 0, hm = 0, nbf = 0;
 		int especialidade, back = 0;
-		String continuar;
+		String continuar = "s";
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Informe sua idade: ");
-		idade = sc.nextInt();
-		totalIdade += idade;
-		x++;
-		System.out.println(
-				"Informe sua identidade: [1]Mulher Cis - [2]Homem Cis - [3]Não Binário - [4]Mulher Trans - [5]Homem Trans - [6]Outros");
-		identidade = sc.nextInt();
-		
-		System.out.println("Informe sua especialidade: [1]Backend - [2]Frontend - [3]Mobile - [4]FullStack");
-		especialidade = sc.nextInt();
-		
-		if(especialidade == 1) {
-			back++;
-		}
-		
-		if(identidade == 1 || identidade == 4) {
-			if(especialidade == 2) {
-				mf++;
-			}
-		}
-		
-		if (identidade == 2 || identidade == 5) {
-			if(idade > 40) {
-				hm++;
-			}
-		}
-		
-		if (identidade == 3 && especialidade == 4 && idade < 30 ) {
-			nbf++;
-		}
-		
-		System.out.println("Deseja preencher novamente: [S] - [N]");
-		continuar = sc.next();
 
 		while (!continuar.equalsIgnoreCase("N")) {
 			System.out.println("Informe sua idade: ");
@@ -58,7 +24,7 @@ public class Ex4 {
 			System.out.println("Informe sua especialidade: [1]Backend - [2]Frontend - [3]Mobile - [4]FullStack");
 			especialidade = sc.nextInt();
 			
-		if(especialidade == 2) {
+		if(especialidade == 1) {
 			back++;
 		}
 		
