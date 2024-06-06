@@ -20,9 +20,14 @@ public class Ex6 {
 			}
 		} while (num != 0);
 		
-		media = (float) total / i;
+		if(i == 0) {
+			System.out.println("Não foi possível calcular a média.");
+		} else {
+			media = (float) total / i;
+			System.out.printf("A média de todos os números múltiplos de 3 é: %.2f", media);
+		}
 		
-		System.out.printf("A média de todos os números múltiplos de 3 é: %.2f", media);
+		
 	}
 
 }
