@@ -7,8 +7,8 @@ public class Ex4 {
 	public static void main(String[] args) {
 		int idade, totalIdade = 0, mediaIdade = 0;
 		int x = 0;
-		int identidade, mf = 0, hm = 0, nbf = 0, mc = 0, hc = 0, nb = 0, mt = 0, ht = 0, outros = 0;
-		int especialidade, back = 0, front = 0, mob = 0, full = 0;
+		int identidade, mf = 0, hm = 0, nbf = 0; //mc = 0, hc = 0, nb = 0, mt = 0, ht = 0, outros = 0;
+		int especialidade, back = 0;
 		String continuar;
 		Scanner sc = new Scanner(System.in);
 
@@ -19,7 +19,7 @@ public class Ex4 {
 		System.out.println(
 				"Informe sua identidade: [1]Mulher Cis - [2]Homem Cis - [3]Não Binário - [4]Mulher Trans - [5]Homem Trans - [6]Outros");
 		identidade = sc.nextInt();
-		switch(identidade) {
+		/*switch(identidade) {
 			case 1: 
 				mc++;
 				break;
@@ -40,11 +40,11 @@ public class Ex4 {
 				break;
 			default: 
 				System.out.println("Opção inválida");
-			}
+			}*/
 		System.out.println("Informe sua especialidade: [1]Backend - [2]Frontend - [3]Mobile - [4]FullStack");
 		especialidade = sc.nextInt();
 		
-		switch(especialidade) {
+		/*switch(especialidade) {
 			case 1:
 				back++;
 				break;
@@ -59,6 +59,10 @@ public class Ex4 {
 				break;
 			default:
 				System.out.println("Opção inválida!");
+		}*/
+		
+		if(especialidade == 1) {
+			back++;
 		}
 		
 		if(identidade == 1 || identidade == 4) {
@@ -89,7 +93,7 @@ public class Ex4 {
 					"Informe sua identidade: [1]Mulher Cis - [2]Homem Cis - [3]Não Binário - [4]Mulher Trans - [5]Homem Trans - [6]Outros");
 			identidade = sc.nextInt();
 			
-		switch(identidade) {
+		/*switch(identidade) {
 			case 1: 
 				mc++;
 				break;
@@ -110,12 +114,12 @@ public class Ex4 {
 				break;
 			default: 
 				System.out.println("Opção inválida");
-			}
+			}*/
 			
 			System.out.println("Informe sua especialidade: [1]Backend - [2]Frontend - [3]Mobile - [4]FullStack");
 			especialidade = sc.nextInt();
 			
-		switch(especialidade) {
+		/*switch(especialidade) {
 			case 1:
 				back++;
 				break;
@@ -130,6 +134,10 @@ public class Ex4 {
 				break;
 			default:
 				System.out.println("Opção inválida!");
+		}*/
+			
+		if(especialidade == 2) {
+			back++;
 		}
 		
 		if(identidade == 1 || identidade == 4) {
@@ -144,7 +152,7 @@ public class Ex4 {
 			}
 		}
 		
-		if (identidade == 3 && idade < 30) {
+		if (identidade == 3 && especialidade == 4 && idade < 30 ) {
 			nbf++;
 		}
 			
