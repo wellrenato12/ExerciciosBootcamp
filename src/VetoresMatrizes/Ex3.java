@@ -27,7 +27,7 @@ public class Ex3 {
 		
 		for(int i = 0; i < 3; i++) {
 			for(int j = 2; j >= 0; j--) {
-				System.out.println("Elementos da diagonal principal: " + numeros[i][j]);
+				System.out.println("Elementos da diagonal secundária: " + numeros[i][j]);
 				somaDiagSecund += numeros[i][j];
 				i++;
 			}
