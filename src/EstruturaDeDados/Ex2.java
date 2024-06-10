@@ -25,7 +25,7 @@ public class Ex2 {
 			case 1: 
 				System.out.println("Adicionar livro: ");
 				String livro = scanner.nextLine();
-				livros.add(livro);
+				livros.push(livro);
 				System.out.println("Livro adicionado!");
 				break;
 			case 2: 
